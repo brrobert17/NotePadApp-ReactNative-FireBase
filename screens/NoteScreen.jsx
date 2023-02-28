@@ -9,6 +9,7 @@ import {storage} from "../config/firebase";
 const NoteScreen = ({route, navigation}) => {
     const {editNote, deleteNote, saveNote, setNote} = useContext(AppContext)
     const {note} = route.params
+    console.log(note)
     const [noteScreenNote, setNoteScreenNote] = useState(note.text);
     const [url, setUrl] = useState();
     console.log("here's the note:" +note)
